@@ -100,6 +100,9 @@ export function ShowPlaylist() {
             for (let song of all_song) {
               if (song.title === item) {
                 document.getElementById('playing-now').src = `${song.src}`;
+                document.getElementById('playing-img').src = `${song.thumbnail}`;
+                document.getElementById('playing-title').innerHTML = `${song.title}`;
+                document.getElementById('playing-author').innerHTML = `${song.author}`;
               }
             }
           });
@@ -151,6 +154,9 @@ export function addToPlaylist(song) {
                 for (let songs of all_song) {
                   if (songs.title === song) {
                     document.getElementById('playing-now').src = `${songs.src}`;
+                    document.getElementById('playing-img').src = `${songs.thumbnail}`;
+                    document.getElementById('playing-title').innerHTML = `${songs.title}`;
+                    document.getElementById('playing-author').innerHTML = `${songs.author}`;
                   }
                 }
               });

@@ -1,3 +1,11 @@
 .PlayingSong {
   height: 20rem;
 }
+#playing-img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+#playing-now {
+  outline: none;
+}
