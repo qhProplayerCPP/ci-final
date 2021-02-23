@@ -1,0 +1,23 @@
+.SearchedSong {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 1rem;
+}
+.searchedSong-button {
+  height: 3rem;
+}
+#searchedSong-info {
+  flex-direction: column;
+}
+#searchedSong-img {
+  width: 10rem;
+  height: 10rem;
+}
+#searchBar {
+  width: 90%;
+  height: 2rem;
+  padding: 0.1rem 0.3rem;
+  margin: 1rem 1rem;
+  outline: none;
+}

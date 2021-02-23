@@ -1,0 +1,23 @@
+#Playlist {
+  height: 15rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.playlist-button {
+  width: 70%;
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
+  background-color: black;
+  color: whitesmoke;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+#div-playlist-button {
+  display: flex;
+}
+.playlist-remove-button {
+  background-color: red;
+  width: 20%;
+}

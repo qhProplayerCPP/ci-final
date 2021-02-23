@@ -1,0 +1,6 @@
+.LoginBox {
+  margin: 0 30%;
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+}
