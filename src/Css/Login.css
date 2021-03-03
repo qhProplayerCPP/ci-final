@@ -9,7 +9,7 @@ button {
   letter-spacing: 1rem;
   display: flex;
   align-items: center;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 2rem;
   padding-top: 7rem;
 }
@@ -25,7 +25,7 @@ button {
 .login {
   font-size: 2rem;
   width: 15%;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: white;
   border-bottom: 0.5rem solid #10652e;
   margin-bottom: 1rem;
@@ -58,7 +58,7 @@ h1 {
   margin-bottom: 0.5rem;
   width: 70%;
   color: white !important;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-left: 0.5rem;
   font-size: 1rem;
 }
@@ -85,6 +85,7 @@ h1 {
   letter-spacing: 0.2rem;
   transition: all 0.5s;
   margin-bottom: 5.5rem;
+  cursor: pointer;
 }
 
 .loginButton:hover {

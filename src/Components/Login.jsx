@@ -8,11 +8,7 @@ export class Login extends React.Component {
     return (
       <div className="login__Box">
         <div className="spotiLogin">
-          <img
-            alt="SpotiIcon"
-            className="spotiIcon"
-            src="https://image.flaticon.com/icons/png/512/2111/2111624.png"
-          />
+          <img alt="SpotiIcon" className="spotiIcon" src="https://image.flaticon.com/icons/png/512/2111/2111624.png" />
           <h1>Welcome to Spotifry</h1>
         </div>
         <h2 className="login">Login</h2>
@@ -33,6 +29,7 @@ export class Login extends React.Component {
           </Link>
         </span>
         <a
+          href
           className="loginButton"
           onClick={() => {
             const data = {
@@ -46,13 +43,8 @@ export class Login extends React.Component {
             });
           }}
         >
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
           Sign In
         </a>
-        
       </div>
     );
   }
