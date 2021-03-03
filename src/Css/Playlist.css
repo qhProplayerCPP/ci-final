@@ -18,6 +18,6 @@
   display: flex;
 }
 .playlist-remove-button {
-  background-color: red;
+  background-color: #31382c;
   width: 20%;
 }
