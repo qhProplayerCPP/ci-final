@@ -18,7 +18,7 @@ export class User extends React.Component {
         <Navbar user={this.username} />
         <div className="spotifryDisplay" style={{ display: 'flex' }}>
 
-          <div className="controller" style={{ width: '60%' }}>
+          <div className="controller" style={{ width: '40%' }}>
             <PlayingSong
               title="Unknown"
               author="Unknown"
@@ -26,7 +26,7 @@ export class User extends React.Component {
             />
             <Playlist />
           </div>
-          <div className="displayer" style={{ width: '40%' }}>
+          <div className="displayer" style={{ width: '60%' }}>
             <SearchBar />
             <div id="SongsList"></div>
           </div>
