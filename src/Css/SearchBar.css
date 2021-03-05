@@ -155,7 +155,9 @@
   height: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
-
+#searchedSong-info {
+  padding-right: 20rem;
+}
 @keyframes animate {
   0% {
     background-position: 0 0;

@@ -85,9 +85,9 @@ export function ShowPlaylist() {
           document.getElementById('Playlist').insertAdjacentHTML(
             'beforeend',
             `<div id="div-playlist-button">
-          <button class="playlist-button" id='play-${item}'>${item}</button>
+          <button class="playlist-button" id='play-${item}'><span>${item}</span></button>
           <button class="playlist-button playlist-remove-button" id="remove-${item}">
-            Remove
+           <span>Remove</span> 
           </button>
         </div>`
           );
@@ -138,9 +138,9 @@ export function addToPlaylist(song) {
           document.getElementById('Playlist').insertAdjacentHTML(
             'beforeend',
             `<div id="div-playlist-button">
-        <button class="playlist-button" id='play-${song}'>${song}</button>
+        <button class="playlist-button" id='play-${song}'><span>${song}</span></button>
         <button class="playlist-button playlist-remove-button" id="remove-${song}">
-          Remove
+          <span>Remove</span>
         </button>
       </div>`
           );
