@@ -14,10 +14,158 @@
   width: 10rem;
   height: 10rem;
 }
-#searchBar {
-  width: 90%;
-  height: 2rem;
-  padding: 0.1rem 0.3rem;
-  margin: 1rem 1rem;
+
+.search_wrap {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.search_wrap .search_box {
   outline: none;
+  position: relative;
+  width: 80%;
+  height: 3.75rem;
+}
+
+.search_wrap .search_box .input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.188rem;
+  font-size: 18px;
+}
+
+.search_wrap .search_box .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3.75rem;
+  height: 100%;
+  background: #1db953;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.search_wrap .search_box .btn:hover {
+  background: #708bd2;
+}
+
+.search_wrap .search_box .btn.btn_common .fas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+}
+
+.search_wrap.search_wrap_3 .search_box .input {
+  padding-right: 80px;
+  border-radius: 50px;
+  outline: none;
+}
+
+.search_wrap.search_wrap_3 .search_box .btn {
+  right: 0px;
+  border-radius: 50%;
+}
+
+#searchedSong-h3 {
+  color: white;
+}
+
+#searchedSong-p {
+  color: gray;
+}
+
+/* #searchedSong-info {
+  padding-right: 10rem;
+} */
+
+.searchedSong-button {
+  padding: 0 0.25rem;
+  position: relative;
+  width: 15rem;
+  height: 3rem;
+  line-height: 3rem;
+  background: #000;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 1rem;
+  letter-spacing: 0.25rem;
+}
+.searchedSong-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.searchedSong-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  opacity: 0;
+  filter: blur(20px);
+  transition: 0.5s;
+  animation: animate 20s linear infinite;
+}
+.searchedSong-button:hover::before,
+.searchedSong-button:hover::after {
+  opacity: 1;
+}
+.searchedSong-button span {
+  position: absolute;
+  display: block;
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  text-align: center;
+  background: #0c0c0c;
+  color: rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.searchedSong-button:hover span {
+  color: rgba(255, 255, 255, 1);
+}
+
+.searchedSong-button span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+#searchedSong-info {
+  padding-right: 15rem;
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }

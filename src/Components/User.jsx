@@ -16,18 +16,19 @@ export class User extends React.Component {
     return (
       <div>
         <Navbar user={this.username} />
-        <div style={{ display: 'flex' }}>
-          <div className="displayer" style={{ width: '70%' }}>
-            <SearchBar />
-            <div id="SongsList"></div>
-          </div>
-          <div className="controller" style={{ width: '30%' }}>
+        <div className="spotifryDisplay" style={{ display: 'flex' }}>
+
+          <div className="controller" style={{ width: '40%' }}>
             <PlayingSong
               title="Unknown"
               author="Unknown"
               thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Vinyl_record.svg/1200px-Vinyl_record.svg.png"
             />
             <Playlist />
+          </div>
+          <div className="displayer" style={{ width: '60%' }}>
+            <SearchBar />
+            <div id="SongsList"></div>
           </div>
         </div>
         <Footer />
