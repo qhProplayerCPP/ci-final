@@ -28,6 +28,7 @@ export class Login extends React.Component {
             Sign up
           </Link>
         </span>
+        <div className="notify">Invalid</div>
         <a
           href
           className="loginButton"
@@ -38,7 +39,7 @@ export class Login extends React.Component {
             };
             SignIn(data).then((e) => {
               if (!e) {
-                alert('User invalid');
+                document.getElementsByClassName('notify')[0].style.display = 'block'
               }
             });
           }}

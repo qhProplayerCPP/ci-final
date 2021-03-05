@@ -31,7 +31,7 @@ export class SignUp extends React.Component {
             Login
           </Link>
         </span>
-        
+        <span className="notifyS">Existed</span>
         <a
           className="loginButton"
           onClick={() => {
@@ -44,7 +44,8 @@ export class SignUp extends React.Component {
             } else {
               SignUpF(data).then((e) => {
                 if (!e) {
-                  alert('Existed');
+                  console.log('check')
+                  document.getElementsByClassName('notifyS')[0].style.display = 'block'
                 }
               });
             }

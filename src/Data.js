@@ -38,7 +38,7 @@ export var all_song = [
     thumbnail:
       'https://i.ytimg.com/vi/YBb7OeNHhu0/maxresdefault.jpg',
     src: ' https://tainhacmienphi.biz/get/song/api/256718',
-    author: 'Tage',
+    author: 'Tage Tage Tage',
     title: 'Ganh Tị',
   },
   {
